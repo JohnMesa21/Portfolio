@@ -784,3 +784,103 @@ footer .arriba{
         width: 100%;
     }
 }
+/* SECCION REFERENCIAS */
+.referencias{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+    }
+    .referencias{
+    background-image: url(img/contact_bg.png);
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
+}
+.referencias .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.referencias h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.referencias .fila{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.referencias .col{
+    width: 48%;
+    background-color: #1e2326;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.referencias .col:hover{
+    transform: translateY(-5px);
+}
+.referencias .col img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #1CB698;
+    margin-bottom: 15px;
+}
+.referencias .col h3{
+    font-size: 24px;
+    font-family: 'Righteous';
+    margin-bottom: 10px;
+    color: #1CB698;
+}
+.referencias .col p{
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+.referencias .col .cargo{
+    color: #1CB698;
+    font-weight: bold;
+}
+.referencias .col .btn-linkedin{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    text-decoration: none;
+}
+.referencias .col .btn-linkedin .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+.referencias .col .btn-linkedin:hover .overlay{
+    width: 100%;
+}
+.referencias .col .btn-linkedin i{
+    margin-right: 5px;
+}
+
+@media screen and (max-width:700px){
+    .referencias .fila{
+        display: block;
+    }
+    .referencias .col{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
