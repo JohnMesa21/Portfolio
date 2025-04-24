@@ -9,6 +9,18 @@ html{
     /* me permite deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
 }
+/* Animaciones al hacer scroll */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
 /* MENU */
 .contenedor-header{
     background: #1e2326;
@@ -464,6 +476,53 @@ html{
     position: relative;
     bottom: 4px;
 }
+/* SECCION CERTIFICACIONES */
+.certificaciones{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.certificaciones .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.certificaciones h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.certificaciones .certificado{
+    background-color: #1e2326;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.certificaciones .certificado img{
+    width: 100%;
+    max-width: 500px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.certificaciones .certificado h3{
+    font-size: 24px;
+    font-family: 'Righteous';
+    margin-bottom: 10px;
+    color: #1CB698;
+}
+.certificaciones .certificado p{
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.certificaciones .certificado .fecha{
+    color: #1CB698;
+    font-weight: bold;
+}
 /* SECCION PORTFOLIO */
 .portfolio{
     background-color: #252A2E;
@@ -590,7 +649,7 @@ html{
     top: 40%;
     background-color: #252A2E;
     padding: 20px;
-    max-swidth: 350px;
+    max-width: 350px;  
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -642,6 +701,18 @@ footer .arriba{
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
+}
+
+.copyright{
+    background-color: #1e2326;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+.copyright span{
+    color: #1CB698;
+    font-weight: bold;
 }
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
