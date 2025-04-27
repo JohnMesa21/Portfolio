@@ -60,4 +60,24 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 
 // Para asegurar que la animación se ejecute al cargar la página
-reveal(); 
+reveal();
+
+// Back to Top Button
+const backToTopButton = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        backToTopButton.classList.add('visible');
+    } else {
+        backToTopButton.classList.remove('visible');
+    }
+});
+
+// Smooth scroll to top
+backToTopButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}); 
