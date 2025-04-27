@@ -12,14 +12,32 @@ html{
 /* Animaciones al hacer scroll */
 .reveal{
     position: relative;
-    transform: translateY(150px);
+    transform: translateX(-150px);
     opacity: 0;
     transition: all 1s ease;
+    background-color: #1e2326;
+    visibility: hidden;
 }
 
 .reveal.active{
-    transform: translateY(0px);
+    transform: translateX(0);
     opacity: 1;
+    visibility: visible;
+}
+
+/* Animación específica para la sección Sobre Mí */
+#sobremi.reveal {
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease, visibility 1s ease;
+    background-color: #1e2326;
+    visibility: hidden;
+}
+
+#sobremi.reveal.active {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
 }
 /* MENU */
 .contenedor-header{
